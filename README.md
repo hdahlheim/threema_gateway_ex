@@ -1,6 +1,6 @@
 # ThreemaGateway Elixir
 
-Unofficial Elixir SDK for the Threema Gateway API.
+Work in progress unofficial Elixir SDK for the Threema Gateway API.
 
 The code is mostly based on the [Rust SDK](https://github.com/dbrgn/threema-gateway-rs/tree/master).
 

@@ -37,6 +37,7 @@ defmodule ThreemaGateway.CryptoTest do
     for _ <- 1..500 do
       random_pad = Crypto.random_padding_amount()
       assert random_pad >= 1
+      assert random_pad <= 255
     end
   end
 

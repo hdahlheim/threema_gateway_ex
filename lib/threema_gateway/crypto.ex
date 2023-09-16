@@ -38,8 +38,9 @@ defmodule ThreemaGateway.Crypto do
   end
 
   def encrypt_file_msg(file_msg, public_key, private_key) do
-    data = Jason.encode!(file_msg)
-    encrypt_msg(data, :file, public_key, private_key)
+    file_msg
+    |> Jason.encode!()
+    |> encrypt_msg(:file, public_key, private_key)
   end
 
   def encrypt_padded(box, public_key, private_key, nonce \\ gen_nonce()) do
